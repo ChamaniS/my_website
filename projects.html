@@ -7,55 +7,93 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamani Shiranthika">
     <meta property="og:description" content="My personal website">
-        <meta property="og:image" content="https://imageupload.io/ib/NPNAXl8aUCOoEll_1695797129.png">
+    <meta property="og:image" content="https://imageupload.io/ib/NPNAXl8aUCOoEll_1695797129.png">
 
-     <title>Chamani Shiranthika</title>  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-    <!-- Bootstrap -->
+    <title>Chamani Shiranthika</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
-
-    <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
-    
+
     <style>
-        h1{
-            font-family: 'Maven Pro';
+        body {
+            font-family: 'Maven Pro', sans-serif;
+            background-color: #f9f9f9;
         }
-       
-        
+
+        h1, h3, a {
+            font-family: 'Maven Pro', sans-serif;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .title a {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .title a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            background: #440606;
+            transition: width 0.3s;
+            left: 0;
+            bottom: -3px;
+        }
+
+        .title a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-inverse {
+            border: none;
+        }
+
+        .divider {
+            height: 4px;
+            width: 100px;
+            background-color: #440606;
+            margin: 0 auto 40px auto;
+        }
     </style>
-      
 </head>
 
 <body>
-    
-    <!-- header -->
-        <header class="navbar-fixed-top">
-    <nav class="navbar navbar-inverse" style="background-color: #440606;">
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<header class="navbar-fixed-top">
+    <nav class="navbar navbar-inverse" style="background-color: #440606;">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-
         <ul style="float:left;">
-            <li class="nav-content"><a style="font-size:150%; font-weight:800; font-family: 'Maven Pro'; color:gainsboro;" href="#home">Chamani Shiranthika</a></li>
+            <li class="nav-content">
+                <a style="font-size:150%; font-weight:800; font-family: 'Maven Pro'; color:gainsboro;" href="#home">Chamani Shiranthika</a>
+            </li>
         </ul>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul style="float: right;">
                 <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="index.html">About</a></li>
@@ -65,102 +103,65 @@
                 <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="skills_certificates.html">Skills & Certificates</a></li>
                 <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="Achievements.html">Achievements</a></li>
                 <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="blogpost.html">Blog Posts</a></li>
-           <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="voluntary.html">Voluntary Experiences</a></li>
-
+                <li><a style="font-size:80%; font-weight:700; font-family: 'Maven Pro'; color:gainsboro" href="voluntary.html">Voluntary Experiences</a></li>
             </ul>
         </div>
     </nav>
 </header>
 
-     <div class="section" id="projects">
-        <div class="container">
-            <br>
-            <br>
-            <h1 style="text-align: center;" class="size-50">Projects</h1>
-            <br>
-            <br>
-            <br>
-            <hr class="divider" />
-            <div class="main-container portfolio-inner clearfix">
-                <div class="portfolio-div">
-                    <div class="portfolio">
-                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
+<div class="section" id="projects">
+    <div class="container">
+        <br><br><br>
+        <h1 style="text-align: center;" class="size-50">Projects</h1>
+        <hr class="divider" />
 
+        <div class="main-container portfolio-inner clearfix">
+            <div class="portfolio-div">
+                <div class="portfolio">
+                    <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
 
-<div class="item row">
-    <div class="desc col-md-6 col-sm-6 col-xs-12" style="text-align:justify;">
-        <h3 class="title"><a style="color: black;"><strong>Scalable, Robust, and Privacy-Preserving Decentralized Deep Learning for Medical Image Analysis</strong></a></h3>
-        <p style="font-size: medium;">Project Description: This is my Ph.D. research which is ongoing.
-        </p>
-    </div>
-</div>
-
-
-
-                            <div class="item row">
-    <div class="desc col-md-6 col-sm-6 col-xs-12" style="text-align:justify;">
-        <h3 class="title"><a style="color: black;"><strong>Reinforcement Learning Based Control of Cancer Chemotherapy Treatments
-</strong></a></h3>
-        <p style="font-size: medium;">Project Description: Reinforcement learning has achieved tremendous success in recent years. Extending
-its scope from the traditional complex games, reinforcement learning has caught researcher’s
-attention on modeling real life scenarios such as self-driving vehicles technology, industry
-automation, trading and finance, natural language processing, healthcare, engineering, robotics,
-etc. A dynamic treatment regimen, an essential core for applying personalized medicine, is one
-such preliminary research field in the healthcare domain, which researchers are focusing their
-mindsets currently. Estimating the optimal dynamic treatment regimens from the observational
-real clinical data is being popularized among the researchers widening its scope towards more
-advanced versions of reinforcement learning algorithms. This research is about a research
-study that focused on reinforcement learning techniques that have been approached in the
-context of cancer chemotherapy treatments. Primarily, this thesis addresses the result of the
-study by means of the state-of-the-art on reinforcement learning techniques used in generating
-the optimal policy for sequential treatments including the existing online reinforcement
-learning approaches. A simulation for cancer chemotherapy via traditional Q-learning would
-be thereby presented. Secondly, the study will extend towards using the offline reinforcement
-learning in the optimal policy generation. The proposed solution follows thus a data driven approach which works on the real human colon cancer clinical data.
-The novelty of the proposed solution resides on the implementation of an offline reinforcement
-learning approach by means of a model-based architecture using the conservative Q-learning
-and the model based offline policy optimization algorithm. As per the experimental results and
-the evaluations, it was revealed that the proposed Chemo-RL model caters well the problem
-of cancer chemotherapy treatment scheduling as a supportive model for the junior oncologists
-in deciding their treatment decisions.
-        </p>
-    </div>
-</div>
-
-
-<div class="item row">
-    <div class="desc col-md-6 col-sm-6 col-xs-12" style="text-align:justify;">
-        <h3 class="title"><a style="color: black;"><strong>Application for personalized location recommendation and location detail translation</strong></a></h3>
-        <p style="font-size: medium;">Project Description:
-            We  proposed solution where tourist gets personalized recommendations based on locations to be visited, automatic extracted, summarized and translated details of those locations and recognized, translated details of important Sinhala notices displayed on landmarks.
-Technologies using: Machine Learning, Unsupervised Learning approaches, Computer Assidetd Translation, Text Summarization, Sentiment Analysis, Optical character recognition.
-        </p>
-    </div>
-</div>
+                        <div class="item row">
+                            <div class="desc col-md-6 col-sm-6 col-xs-12 project-card" data-aos="fade-up">
+                                <h3 class="title"><a style="color: black;"><strong>Scalable, Robust, and Privacy-Preserving Decentralized Deep Learning for Medical Image Analysis</strong></a></h3>
+                                <p style="font-size: medium;">Project Description: This is my Ph.D. research which is ongoing.</p>
                             </div>
-                            <br/>
                         </div>
-                        <!-- end portfolio_container -->
+
+                        <div class="item row">
+                            <div class="desc col-md-6 col-sm-6 col-xs-12 project-card" data-aos="fade-up">
+                                <h3 class="title"><a style="color: black;"><strong>Reinforcement Learning Based Control of Cancer Chemotherapy Treatments</strong></a></h3>
+                                <p style="font-size: medium;">Reinforcement learning techniques for personalized medicine decision-making in cancer chemotherapy. Simulated using Q-learning and offline CQL-based model optimization with real colon cancer clinical data.</p>
+                            </div>
+                        </div>
+
+                        <div class="item row">
+                            <div class="desc col-md-6 col-sm-6 col-xs-12 project-card" data-aos="fade-up">
+                                <h3 class="title"><a style="color: black;"><strong>Application for Personalized Location Recommendation and Translation</strong></a></h3>
+                                <p style="font-size: medium;">A smart travel app providing personalized location recommendations, landmark detail translation, and Sinhala notice recognition using machine learning, summarization, OCR, and sentiment analysis.</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <!-- portfolio -->
                 </div>
-                <!-- end portfolio div -->
             </div>
-            <!-- end main container -->
         </div>
     </div>
-
+</div>
 
 <script src="js/jquery.js"></script>
-<!--  plugins  -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/jquery.form.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-
-<!--  main script  -->
 <script src="js/custom.js"></script>
-</body>
 
+<script>
+    AOS.init({
+        once: true,
+        duration: 1000
+    });
+</script>
+
+</body>
 </html>
